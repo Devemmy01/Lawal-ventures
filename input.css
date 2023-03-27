@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    /* background: url(/Img/bg.jpg); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* height: 100vh; */
+}
+
+@layer components {
+    .hamburger div:first-child{
+        @apply rotate-45 translate-y-1.5;
+    }
+    .hamburger div:last-child{
+        @apply -rotate-45 -translate-y-1;
+    }
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+#btn-back-to-top {
+    position: fixed;
+    display: none;
+    z-index: 20;
+    box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.3);
+}
+#btn-back-to-top2{
+    position: fixed;
+    z-index: 20;
+}
+.home h1{
+    width: 100%;
+}
+   
+.contact__btn{
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.header__btn{
+    background: linear-gradient(30deg, #fff, rgba(182, 180, 180, 0.801), #fff);
+    position: absolute;
+    right: 6%;
+    bottom: -3rem;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.header__btn:hover{
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-1rem);
+}
+
+.contact__btn i{
+    font-size: 1.8rem; 
+    z-index: 10;
+}
+
+iframe{
+    height: 500px;
+    filter: invert(100%);
+}
+
+.im{
+    border: 3px solid #000;
+    border-radius: 50%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 10px;
+    background: #000;
+}
