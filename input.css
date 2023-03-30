@@ -27,9 +27,6 @@ html{
     position: fixed;
     z-index: 20;
 }
-.home h1{
-    width: 100%;
-}
    
 .contact__btn{
     border-radius: 50%;
