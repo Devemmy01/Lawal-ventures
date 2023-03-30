@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    /* background: url(/Img/bg.jpg); */
-    background-repeat: no-repeat;
-    background-size:cover;
-    /* height: 100vh; */
-}
 
 @layer components {
     .hamburger div:first-child{
@@ -20,6 +14,9 @@ body{
 }
 html{
     scroll-behavior: smooth;
+}
+.show-menu{
+    right: 0;
 }
 #btn-back-to-top {
     position: fixed;

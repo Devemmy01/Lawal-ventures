@@ -10,6 +10,7 @@ module.exports = {
     },
     fontFamily:{
       display: ["Orbitron", "sans-serif"],
+      Poppins: ["Poppins", "sans-serif"],
     },
     extend: {},
   },
